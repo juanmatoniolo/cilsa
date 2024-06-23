@@ -1,0 +1,190 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 255, 255, 255;
+    --bs-body-bg-rgb: 0, 0, 0;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #ffffff;
+    --bs-body-bg: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* Fondo negro para alto contraste */
+    color: #ffffff;
+    /* Texto blanco para alto contraste */
+}
+
+.contenedor {
+    padding: 4em 2em;
+    height: 100vh;
+
+}
+
+h1 {
+    color: #ffc107;
+    font-weight: 800;
+    text-align: center;
+}
+
+.form-control {
+    background-color: #000000;
+    /* Fondo negro para alto contraste */
+    color: #ffffff;
+    /* Texto blanco para alto contraste */
+}
+
+input::placeholder {
+    color: #ffffff;
+    /* Color blanco para placeholder */
+    opacity: 1;
+    /* Mantener el color del placeholder completo */
+}
+
+input:focus::placeholder {
+    color: #ffffff;
+    /* Color blanco para placeholder en foco */
+}
+
+.enviar {
+    color: #000000;
+    /* Texto negro */
+    background-color: #ffc107;
+    /* Fondo amarillo */
+    margin: .5em;
+}
+
+.switch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 55px;
+}
+
+.switch-button .switch-outer {
+    height: 100%;
+    background: #000000;
+    /* Fondo negro para alto contraste */
+    width: 115px;
+    border-radius: 165px;
+    box-shadow: inset 0px 5px 10px 0px #333333, 0px 3px 6px -2px #666666;
+    /* Sombra para alto contraste */
+    border: 1px solid #ffffff;
+    /* Borde blanco para alto contraste */
+    padding: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.switch-button .switch-outer input[type="checkbox"] {
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.switch-button .switch-outer .button-toggle {
+    height: 42px;
+    width: 42px;
+    background: linear-gradient(#666666, #333333);
+    /* Gradiente de gris para alto contraste */
+    border-radius: 100%;
+    box-shadow: inset 0px 5px 4px 0px #888888, 0px 4px 15px 0px #111111;
+    /* Sombra para alto contraste */
+    position: relative;
+    z-index: 2;
+    transition: left 0.3s ease-in;
+    left: 0;
+}
+
+.switch-button .switch-outer input[type="checkbox"]:checked+.button .button-toggle {
+    left: 58%;
+}
+
+.switch-button .switch-outer input[type="checkbox"]:checked+.button .button-indicator {
+    animation: indicator 1s forwards;
+}
+
+.switch-button .switch-outer .button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.switch-button .switch-outer .button-indicator {
+    height: 25px;
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    /* Borde blanco para alto contraste */
+    box-sizing: border-box;
+    right: 10px;
+    position: relative;
+}
+
+@keyframes indicator {
+    30% {
+        opacity: 0;
+    }
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        border: 3px solid #60d480;
+        left: -68%;
+    }
+}
