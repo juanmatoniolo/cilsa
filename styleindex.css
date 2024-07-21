@@ -1,0 +1,12 @@
+.container-links {
+    display: flex;
+    gap: 2em;
+    flex-flow: column wrap;
+    width: 50%;
+    
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
