@@ -1,0 +1,7 @@
+.card-perfiles{
+display: flex;
+flex-flow: row wrap;
+margin-top: 2em;
+gap: 1em;
+}
+

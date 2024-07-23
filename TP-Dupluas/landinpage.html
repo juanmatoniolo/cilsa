@@ -13,7 +13,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./asesset/ico.webp" type="image/x-icon">
-    <title>Perfil de Juan Manuel Tonioo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil de Juan Manuel Toniolo</title>
 </head>
 
 <body>
@@ -49,7 +50,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="display-4">Bienvenidos a Mi Perfil</h1>
-                    <p class="lead">Soy Juan Manuel Toniolo, tengo 28 años,  actualmente estoy trabajando y en mis tiempos libres me dedico a aprender programación. Es algo que me gusta y veo con buenos ojos que el día de mañana pueda conseguir trabajo en IT.</p>
+                    <p class="lead">Soy Juan Manuel Toniolo, tengo 28 años, actualmente estoy trabajando y en mis
+                        tiempos libres me dedico a aprender programación. Es algo que me gusta y veo con buenos ojos que
+                        el día de mañana pueda conseguir trabajo en IT.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Juan Manuel Tonioo">
@@ -58,7 +61,7 @@
         </div>
     </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class=" container carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -85,57 +88,69 @@
         </a>
     </div>
 
-    <main class="container my-5">
-        <section id="perfil" class="mb-5">
-            <h2 class="mb-4">Perfil</h2>
+    <main class="container card-perfiles">
+        <section id="perfil" class="col-9 m-auto col-sm-5 ">
             <div class="card">
-                <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Perfil de Juan Manuel Tonioo">
+                <img src="https://via.placeholder.com/400x400" class="img-card" alt="Perfil de Juan Manuel Tonioo">
                 <div class="card-body">
                     <h5 class="card-title">Juan Manuel Tonioo</h5>
-                    <p class="card-text">Soy un entusiasta de la programación y me gusta aprender cosas nuevas en el ámbito de la tecnología. En mis tiempos libres me dedico a aprender más sobre desarrollo web y espero algún día trabajar en el sector IT.</p>
+                    <p class="card-text">Soy un entusiasta de la programación y me gusta aprender cosas nuevas en el
+                        ámbito de la tecnología. En mis tiempos libres me dedico a aprender más sobre desarrollo web y
+                        espero algún día trabajar en el sector IT.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <section id="perfil" class="col-9 m-auto col-sm-5 ">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Perfil de Adriana Branda">
+                <div class="card-body">
+                    <h5 class="card-title">Adriana Brandan</h5>
+                    <p class="card-text">Apasionada de adquirir constantemente nuevas habilidades y conocimientos,
+                        dedico mis tiempos libres para profundizar sobre desarrollo web y análisis de datos </p>
                     <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
         </section>
 
-        <section id="contacto" class="mb-5">
-            <h2 class="mb-4">Contacto</h2>
-            <form action="" class="col-10 col-md-8 col-lg-7 m-auto">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Nombre</span>
-                    <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Apellido</span>
-                    <input type="text" class="form-control" placeholder="Apellido/os" aria-label="apellido"
-                        aria-describedby="basic-addon1">
-                </div>
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon3" required>E-mail</span>
-                    <input type="mail" class="form-control" title="asd" required="basic-url"
-                        aria-describedby="basic-addon3">
-                </div>
-
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon3" required>Fecha</span>
-                    <input title="asd" type="date" class="form-control" required="basic-url"
-                        aria-describedby="basic-addon3">
-                </div>
-
-                <div class="input-group mb-5">
-                    <span class="input-group-text" id="basic-addon3" required>País</span>
-                    <input type="text" title="asd" class="form-control" required id="basic-url"
-                        aria-describedby="basic-addon3">
-                </div>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </section>
     </main>
+    <section id="contacto" class="container mb-5">
+        <h2 class="mb-4">Contacto</h2>
+        <form action="" class="col-10 col-md-8 col-lg-7 m-auto">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nombre</span>
+                <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
 
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Apellido</span>
+                <input type="text" class="form-control" placeholder="Apellido/os" aria-label="apellido"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3" required>E-mail</span>
+                <input type="mail" class="form-control" title="asd" required="basic-url"
+                    aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3" required>Fecha</span>
+                <input title="asd" type="date" class="form-control" required="basic-url"
+                    aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-5">
+                <span class="input-group-text" id="basic-addon3" required>País</span>
+                <input type="text" title="asd" class="form-control" required id="basic-url"
+                    aria-describedby="basic-addon3">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2024 Juan Manuel Tonioo. Todos los derechos reservados.</p>
