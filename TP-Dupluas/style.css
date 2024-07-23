@@ -1,7 +1,91 @@
-.card-perfiles{
-display: flex;
-flex-flow: row wrap;
-margin-top: 2em;
-gap: 1em;
+.card-perfiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    gap: 1em;
+    margin-top: 3em;
+
 }
 
+.card-text {
+    height: 14em;
+}
+
+.contacto {
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.img-banner {
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+}
+
+.img-perfil {
+    width: 60%;
+    margin: auto;
+}
+
+.img-card {
+    height: 32em;
+    object-fit: cover;
+
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.img-perfil {
+    width: 49%;
+}
+
+.texto-perfil {
+    width: 49%;
+}
+
+.img-perfil img {
+    width: 100%;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+
+    .card-perfiles {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .img-perfil {
+        width: 100%;
+    }
+    
+    .texto-perfil {
+        width: 100%;
+    }
+    
+    .img-perfil img {
+        width: 100%;
+    }
+
+
+
+}
+
+
+/* Estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
+    .card-text {
+        height: 8em;
+    }
+
+}
